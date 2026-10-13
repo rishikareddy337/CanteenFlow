@@ -1,0 +1,260 @@
+.payment-page {
+  min-height: 100vh;
+  background: #fff8f3;
+  color: #25283d;
+  font-family: Arial, sans-serif;
+}
+
+.payment-navbar {
+  min-height: 70px;
+  padding: 0 7%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.payment-logo {
+  color: #ff6b35;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.payment-menu-link {
+  color: #e95724;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.payment-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 0 60px;
+}
+
+.payment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.payment-icon {
+  font-size: 38px;
+}
+
+.payment-heading h1 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.payment-heading p {
+  color: #73768a;
+  line-height: 1.6;
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.payment-method-card,
+.payment-summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 5px 25px rgba(35, 35, 75, 0.07);
+}
+
+.payment-method-card h2,
+.payment-summary-card h2 {
+  font-size: 21px;
+  margin: 0 0 22px;
+}
+
+.payment-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px;
+  margin-bottom: 14px;
+  border: 2px solid #f0e3dc;
+  border-radius: 12px;
+  background: white;
+  color: #25283d;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.payment-option:hover {
+  border-color: #ffb18f;
+}
+
+.payment-option.selected {
+  border-color: #ff6b35;
+  background: #fff3ec;
+}
+
+.method-icon {
+  font-size: 28px;
+}
+
+.method-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.method-details strong {
+  font-size: 15px;
+}
+
+.method-details small {
+  color: #77798c;
+  font-size: 12px;
+}
+
+.method-radio {
+  color: #ff6b35;
+  font-size: 21px;
+}
+
+.upi-demo-message {
+  display: flex;
+  gap: 10px;
+  background: #fff8e8;
+  border: 1px solid #f1dfb2;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 12px 0 18px;
+  line-height: 1.5;
+}
+
+.upi-demo-message p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #66583a;
+}
+
+.confirm-payment-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 12px;
+  background: #ff6b35;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.confirm-payment-button:hover {
+  background: #e95724;
+}
+
+.confirm-payment-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.back-to-cart {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #e95724;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.payment-items {
+  border-bottom: 1px solid #f0e8e3;
+  margin-bottom: 15px;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.payment-item strong {
+  white-space: nowrap;
+}
+
+.payment-summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0;
+  color: #73768a;
+}
+
+.payment-grand-total {
+  padding-top: 16px;
+  border-top: 1px solid #f0e8e3;
+  color: #25283d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.payment-grand-total strong {
+  color: #ff6b35;
+}
+
+.payment-preparation {
+  background: #fff0e7;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.payment-secure-note {
+  margin: 18px 0 0;
+  color: #73768a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.payment-error {
+  color: #c62828;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-container {
+    width: 92%;
+    padding-top: 25px;
+  }
+
+  .payment-heading h1 {
+    font-size: 26px;
+  }
+
+  .payment-method-card,
+  .payment-summary-card {
+    padding: 20px;
+  }
+
+  .payment-navbar {
+    padding: 0 5%;
+  }
+
+  .payment-logo {
+    font-size: 20px;
+  }
+}

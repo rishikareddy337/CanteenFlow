@@ -1,0 +1,126 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #fffaf5;
+  color: #29241f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  padding: 45px;
+  background: #ffffff;
+  border: 1px solid #f0e8df;
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(60, 40, 20, 0.08);
+  text-align: center;
+}
+
+.auth-card h1 {
+  margin: 0 0 15px;
+  color: #29241f;
+  font-size: 36px;
+}
+
+.auth-card .auth-subtitle {
+  margin: 15px 0 30px;
+  color: #716a62;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.auth-card label {
+  display: block;
+  margin: 12px 0 0;
+  color: #29241f;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.auth-card input {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid #e8ddd3;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #29241f;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #e65c32;
+  box-shadow: 0 0 0 3px rgba(230, 92, 50, 0.12);
+}
+
+/* FIX: Login and Register buttons */
+.auth-card .auth-button,
+.auth-card button[type="submit"] {
+  display: block !important;
+  width: 100% !important;
+  height: 54px !important;
+  margin: 24px 0 0 !important;
+  padding: 15px !important;
+  background: #e65c32 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+}
+
+.auth-card .auth-button:hover,
+.auth-card button[type="submit"]:hover {
+  background: #cc4925 !important;
+}
+
+.auth-card .back-link {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.auth-card a {
+  color: #c94b28;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+.auth-card .auth-footer {
+  margin: 25px 0 0;
+  color: #716a62;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .auth-card {
+    padding: 30px 22px;
+  }
+
+  .auth-card h1 {
+    font-size: 30px;
+  }
+}

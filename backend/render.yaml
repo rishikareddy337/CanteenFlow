@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: canteenflow-backend
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: MYSQL_PASSWORD
+        sync: false
+      - key: PORT
+        value: 8081
