@@ -600,6 +600,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <b>Built with ❤️ for hassle-free canteen dining</b><br>
+  
   <sub>Contributions and feature requests are welcome!</sub>
 </div>
