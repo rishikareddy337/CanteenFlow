@@ -1,7 +1,10 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8081/api";
+const rawBaseUrl = (import.meta.env.VITE_API_BASE_URL || "http://localhost:8081/api").trim().replace(/\/+$/, "");
+const API_BASE_URL = rawBaseUrl.endsWith("/api") ? rawBaseUrl : `${rawBaseUrl}/api`;
 
 async function request(endpoint, options = {}) {
-  const url = `${API_BASE_URL}${endpoint}`;
+  const cleanEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+  const url = `${API_BASE_URL}${cleanEndpoint}`;
+
   const config = {
     headers: {
       "Content-Type": "application/json",
